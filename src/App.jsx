@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { MdDarkMode, MdLightMode, MdOutlineWbSunny } from "react-icons/md";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 
-const API_KEY = '3e07b69da025f62c779cf6822af60bd1';
+const API_KEY = import.meta.env.VITE_API_KEY;
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 const App = () => {
